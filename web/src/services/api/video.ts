@@ -411,6 +411,7 @@ async function createVideoRequestBody(config: AiConfig, model: string, prompt: s
         if (isSeedanceVideoConfig(config)) body.append("size", normalizeSeedanceRatio(config.size));
         else if (size) body.append("size", size);
         body.append("resolution_name", normalizeVideoResolution(config.vquality));
+        body.append("resolution", normalizeVideoResolution(config.vquality));
         if (isKIEGrokVideoModel(config, model)) body.append("mode", normalizeGrokVideoMode(config.videoMode));
         else body.append("preset", "normal");
     }

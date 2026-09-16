@@ -309,7 +309,7 @@ func NormalizeVideoTaskStatus(status string) string {
 		return "completed"
 	case "failed", "fail", "error", "cancelled", "canceled":
 		return "failed"
-	case "running", "processing", "in_progress", "in-progress":
+	case "running", "processing", "in_progress", "in-progress", "unknown":
 		return "processing"
 	case "queued", "queue", "pending", "":
 		return "queued"
