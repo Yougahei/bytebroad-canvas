@@ -88,6 +88,7 @@ export class ImageRequestError extends Error {
 }
 
 type ImageRequestParams = {
+    watermark: boolean;
     n: number;
     quality: string;
     size?: string;
@@ -171,6 +172,7 @@ function createImageRequestParams(config: AiConfig): ImageRequestParams {
     return {
         n: normalizeBoundedInteger(config.count, 1, 1, 15),
         quality,
+        watermark: config.imageWatermark !== "false",
         size: resolveRequestSize(quality, config.size, isSeedreamImageModel(config.model) ? SEEDREAM_MIN_IMAGE_PIXELS : 0),
         timeoutSeconds: IMAGE_REQUEST_TIMEOUT_SECONDS,
         streamPartialImages: normalizeBoundedInteger(config.streamPartialImages, 1, 0, 3),
@@ -234,6 +236,8 @@ function applyImageGenerationParams(body: Record<string, unknown>, config: AiCon
 
     if (params.size) body.size = params.size;
     if (params.quality && !config.codexCli) body.quality = params.quality;
+    // Seedream 默认给生成图打水印，提供开关关闭（其他模型未声明该参数，不传）。
+    if (isSeedreamImageModel(model)) body.watermark = params.watermark;
 }
 
 function applyImageGenerationOptions(body: Record<string, unknown>, config: AiConfig, params: ImageRequestParams) {
@@ -788,6 +792,7 @@ async function requestImageEditSingle(config: AiConfig, prompt: string, referenc
     if (params.n > 1) formData.set("n", String(params.n));
     if (params.size) formData.set("size", params.size);
     if (params.quality && !config.codexCli) formData.set("quality", params.quality);
+    if (isSeedreamImageModel(config.model) && !params.watermark) formData.set("watermark", "false");
     if (config.responseFormatB64Json) formData.set("response_format", "b64_json");
     if (config.streamImages) {
         formData.set("stream", "true");

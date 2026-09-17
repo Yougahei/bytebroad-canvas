@@ -65,6 +65,7 @@ export type AiConfig = {
     audioModels: string[];
     quality: string;
     size: string;
+    imageWatermark: string;
     videoSize: string;
     count: string;
     canvasImageCount: string;
@@ -141,6 +142,7 @@ export const defaultConfig: AiConfig = {
     videoSize: "1280x720",
     count: "1",
     canvasImageCount: "1",
+    imageWatermark: "true",
     timeout: "600",
     apiMode: "images",
     streamImages: "",
@@ -454,6 +456,7 @@ export const useConfigStore = create<ConfigStore>()(
                         videoWatermark: config.videoWatermark || "false",
                         videoCharacterOrientation: config.videoCharacterOrientation === "image" ? "image" : "video",
                         canvasImageCount: config.canvasImageCount || "1",
+                        imageWatermark: config.imageWatermark || "true",
                         imageModels: filterChannelModelsByCapability(localChannels, "image"),
                         videoModels: filterChannelModelsByCapability(localChannels, "video"),
                         textModels: filterChannelModelsByCapability(localChannels, "text"),
