@@ -135,7 +135,7 @@ function greatestCommonDivisor(a: number, b: number) {
     return a;
 }
 
-function resolveSize(quality: string, ratio: string): string | undefined {
+function resolveSize(quality: string, ratio: string, minPixels = 0): string | undefined {
     const basePixels = QUALITY_BASE[quality];
     if (!basePixels || ratio === "auto" || !ratio) return undefined;
 
@@ -146,17 +146,22 @@ function resolveSize(quality: string, ratio: string): string | undefined {
     if (!w || !h) return undefined;
 
     const a = greatestCommonDivisor(w, h);
+    const units = (w / a) * (h / a);
 
-    const unit = Math.round(Math.sqrt((basePixels * basePixels) / ((w / a) * (h / a))) / 16) * 16;
+    let unit = Math.round(Math.sqrt((basePixels * basePixels) / units) / 16) * 16;
+    if (minPixels > 0) {
+        const minUnit = Math.ceil(Math.sqrt(minPixels / units) / 16) * 16;
+        if (unit < minUnit) unit = minUnit;
+    }
     return `${(w / a) * unit}x${(h / a) * unit}`;
 }
 
-function resolveRequestSize(quality: string | undefined, size: string) {
+function resolveRequestSize(quality: string | undefined, size: string, minPixels = 0) {
     const value = size.trim();
     if (!value || value === "auto") return undefined;
     if (/^\d+x\d+$/.test(value)) return value;
     // 用户只选了宽高比时,即使 quality=auto 也要折算成具体像素尺寸,避免 "1:1" 这种非法值发到 API。
-    return resolveSize(quality && QUALITY_BASE[quality] ? quality : "low", value);
+    return resolveSize(quality && QUALITY_BASE[quality] ? quality : "low", value, minPixels);
 }
 
 function createImageRequestParams(config: AiConfig): ImageRequestParams {
@@ -166,10 +171,17 @@ function createImageRequestParams(config: AiConfig): ImageRequestParams {
     return {
         n: normalizeBoundedInteger(config.count, 1, 1, 15),
         quality,
-        size: resolveRequestSize(quality, config.size),
+        size: resolveRequestSize(quality, config.size, isSeedreamImageModel(config.model) ? SEEDREAM_MIN_IMAGE_PIXELS : 0),
         timeoutSeconds: IMAGE_REQUEST_TIMEOUT_SECONDS,
         streamPartialImages: normalizeBoundedInteger(config.streamPartialImages, 1, 0, 3),
     };
+}
+
+// Seedream 系列要求图片至少 3686400 像素（约 2k 档），低基准折算出的尺寸会被上游拒绝。
+const SEEDREAM_MIN_IMAGE_PIXELS = 3686400;
+
+function isSeedreamImageModel(model: string) {
+    return model.trim().toLowerCase().includes("seedream");
 }
 
 function isGrokImageModel(model: string) {
