@@ -5473,6 +5473,7 @@ function buildGenerationConfig(config: AiConfig, node: CanvasNodeData | undefine
         textChannelId,
         audioChannelId,
         quality: node?.metadata?.quality || config.quality || defaultConfig.quality,
+        imageWatermark: node?.metadata?.imageWatermark || config.imageWatermark || defaultConfig.imageWatermark,
         size: isPanoramaNodeType(node?.type) ? PANORAMA_IMAGE_SIZE : node?.metadata?.size || (mode === "video" ? config.videoSize || defaultConfig.videoSize : config.size || defaultConfig.size),
         videoSeconds: node?.metadata?.seconds || config.videoSeconds || defaultConfig.videoSeconds,
         vquality: node?.metadata?.vquality || config.vquality || defaultConfig.vquality,

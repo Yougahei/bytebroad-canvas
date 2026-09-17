@@ -1156,6 +1156,7 @@ async function createCanvasImageTaskRequest(config: AiConfig & { seedIndex?: num
             formData.set("partial_images", String(params.streamPartialImages));
         }
         if (params.size) formData.set("size", params.size);
+        if (isSeedreamImageModel(config.model) && !params.watermark) formData.set("watermark", "false");
         const files = await Promise.all(references.map(async (image) => dataUrlToFile({ ...image, dataUrl: await imageToDataUrl(image) })));
         files.forEach((file) => formData.append("image", file));
         return { method: "POST", headers: tokenHeaders, body: formData };
