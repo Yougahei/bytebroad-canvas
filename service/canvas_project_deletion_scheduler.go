@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/robfig/cron/v3"
-	"github.com/tigerowo/infinite-canvas/repository"
+	"github.com/tigerowo/bytebroad-canvas/repository"
 )
 
 const canvasProjectCleanupCron = "0 3 * * *"

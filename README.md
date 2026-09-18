@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="web/public/logo.svg" width="96" alt="infinite-canvas logo">
+  <img src="web/public/logo.svg" width="96" alt="bytebroad-canvas logo">
 </p>
 
-<h1 align="center">无限画布 (infinite-canvas)</h1>
+<h1 align="center">ByteBroad Canvas (bytebroad-canvas)</h1>
 
 <p align="center">
-  <a href="https://github.com/tigerowo/infinite-canvas"><img src="https://img.shields.io/github/stars/tigerowo/infinite-canvas?style=flat-square&logo=github" alt="GitHub stars"></a>
+  <a href="https://github.com/tigerowo/bytebroad-canvas"><img src="https://img.shields.io/github/stars/tigerowo/bytebroad-canvas?style=flat-square&logo=github" alt="GitHub stars"></a>
   <a href="VERSION"><img src="https://img.shields.io/badge/version-v0.7.1-2563eb?style=flat-square" alt="Version"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-f97316?style=flat-square" alt="License"></a>
   <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-ready-2496ed?style=flat-square&logo=docker&logoColor=white" alt="Docker ready"></a>
@@ -23,15 +23,15 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/tigerowo/infinite-canvas/releases/latest">
+  <a href="https://github.com/tigerowo/bytebroad-canvas/releases/latest">
     <img
-      src="https://img.shields.io/github/v/release/tigerowo/infinite-canvas?style=for-the-badge&logo=windows11&logoColor=white&label=Windows%20EXE&color=2563eb"
+      src="https://img.shields.io/github/v/release/tigerowo/bytebroad-canvas?style=for-the-badge&logo=windows11&logoColor=white&label=Windows%20EXE&color=2563eb"
       alt="下载 Windows EXE"
     >
   </a>
 </p>
 
-无限画布是一款面向图片，视频，音频，全能创作的开源工作台。它把画布编排、AI 图片、视频、音频生成、参考图编辑、对话助手、提示词库和素材沉淀放在同一个界面里，适合用来探索视觉方案并连续迭代图片结果
+ByteBroad Canvas 是一款面向图片，视频，音频，全能创作的开源工作台。它把画布编排、AI 图片、视频、音频生成、参考图编辑、对话助手、提示词库和素材沉淀放在同一个界面里，适合用来探索视觉方案并连续迭代图片结果
 
 ## 赞助商
 
@@ -41,7 +41,7 @@
       <a href="https://88api.ai/sign-up?aff=25ty" target="_blank" rel="noopener"><img src="assets/88.webp" width="128" alt="88API"></a>
     </td>
     <td>
-      <strong>88API｜无限画布</strong> 让各大主流模型能力结合得更紧密。 🎨 支持 <strong>GPT-Image、Gemini、Grok</strong> 等图片模型；🎬 支持 <strong>Seedance、Wan、H3、Kling、Grok</strong> 等视频模型；🎙️ 支持 <strong>Whisper、TTS</strong> 等语音能力。从文案、出图、改图，到视频生成与配音，一张画布串联完整创作链路。不只是模型聚合，更让不同模型在同一工作流中真正协同。 🎁 通过 <a href="https://88api.ai/sign-up?aff=25ty">无限画布专属链接注册</a>，即可领取赠送额度及专属优惠。
+      <strong>88API｜ByteBroad Canvas</strong> 让各大主流模型能力结合得更紧密。 🎨 支持 <strong>GPT-Image、Gemini、Grok</strong> 等图片模型；🎬 支持 <strong>Seedance、Wan、H3、Kling、Grok</strong> 等视频模型；🎙️ 支持 <strong>Whisper、TTS</strong> 等语音能力。从文案、出图、改图，到视频生成与配音，一张画布串联完整创作链路。不只是模型聚合，更让不同模型在同一工作流中真正协同。 🎁 通过 <a href="https://88api.ai/sign-up?aff=25ty">ByteBroad Canvas 专属链接注册</a>，即可领取赠送额度及专属优惠。
     </td>
   </tr>
   <tr>
@@ -49,7 +49,7 @@
       <a href="https://metaso.cn/minimax-h3/?s=tt" target="_blank" rel="noopener"><img src="assets/metaso.png" width="163" alt="秘塔科技"></a>
     </td>
     <td>
-      <strong>MiniMax H3 视频生成 API｜秘塔科技</strong> 秘塔科技提供高性价比的 MiniMax H3 视频生成服务：<strong>768P 仅 0.09 元/秒，2K 仅 0.15 元/秒</strong>。支持原生 2K、音画同步，API 兼容 <strong>OpenAI 协议</strong>，同时支持 <strong>ComfyUI</strong>，无需自行部署 GPU。 🎁 通过 <a href="https://metaso.cn/minimax-h3/?s=tt" target="_blank" rel="noopener noreferrer">无限画布专属链接注册</a>，即可领取赠送额度及专属优惠。
+      <strong>MiniMax H3 视频生成 API｜秘塔科技</strong> 秘塔科技提供高性价比的 MiniMax H3 视频生成服务：<strong>768P 仅 0.09 元/秒，2K 仅 0.15 元/秒</strong>。支持原生 2K、音画同步，API 兼容 <strong>OpenAI 协议</strong>，同时支持 <strong>ComfyUI</strong>，无需自行部署 GPU。 🎁 通过 <a href="https://metaso.cn/minimax-h3/?s=tt" target="_blank" rel="noopener noreferrer">ByteBroad Canvas 专属链接注册</a>，即可领取赠送额度及专属优惠。
     </td>
   </tr>
 </table>
@@ -102,8 +102,8 @@
 ## 快速开始
 
 ```bash
-git clone https://github.com/tigerowo/infinite-canvas.git
-cd infinite-canvas
+git clone https://github.com/tigerowo/bytebroad-canvas.git
+cd bytebroad-canvas
 cp .env.example .env
 # 修改默认账号密码等信息
 docker compose up -d --build
@@ -213,10 +213,10 @@ https://infinite-canvas-cpco.onrender.com?apiKey={key}&baseUrl={address}
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=tigerowo%2Finfinite-canvas&type=date&legend=top-left">
+<a href="https://www.star-history.com/?repos=tigerowo%2Fbytebroad-canvas&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=tigerowo/infinite-canvas&type=date&theme=dark&legend=top-left&sealed_token=SMYnxdZ99ogoiNPY5Qaeg1X9nB17KGpOCvv0Pzjz5mLCx5o7pNOpQNnYpk2CIUkdJMuAcxve8H_ZAYllKY4b7YTvZh0tiHoC8hGfknKnk2IUMYhQoIxgcQ" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=tigerowo/infinite-canvas&type=date&legend=top-left&sealed_token=SMYnxdZ99ogoiNPY5Qaeg1X9nB17KGpOCvv0Pzjz5mLCx5o7pNOpQNnYpk2CIUkdJMuAcxve8H_ZAYllKY4b7YTvZh0tiHoC8hGfknKnk2IUMYhQoIxgcQ" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=tigerowo/infinite-canvas&type=date&legend=top-left&sealed_token=SMYnxdZ99ogoiNPY5Qaeg1X9nB17KGpOCvv0Pzjz5mLCx5o7pNOpQNnYpk2CIUkdJMuAcxve8H_ZAYllKY4b7YTvZh0tiHoC8hGfknKnk2IUMYhQoIxgcQ" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=tigerowo/bytebroad-canvas&type=date&theme=dark&legend=top-left&sealed_token=SMYnxdZ99ogoiNPY5Qaeg1X9nB17KGpOCvv0Pzjz5mLCx5o7pNOpQNnYpk2CIUkdJMuAcxve8H_ZAYllKY4b7YTvZh0tiHoC8hGfknKnk2IUMYhQoIxgcQ" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=tigerowo/bytebroad-canvas&type=date&legend=top-left&sealed_token=SMYnxdZ99ogoiNPY5Qaeg1X9nB17KGpOCvv0Pzjz5mLCx5o7pNOpQNnYpk2CIUkdJMuAcxve8H_ZAYllKY4b7YTvZh0tiHoC8hGfknKnk2IUMYhQoIxgcQ" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=tigerowo/bytebroad-canvas&type=date&legend=top-left&sealed_token=SMYnxdZ99ogoiNPY5Qaeg1X9nB17KGpOCvv0Pzjz5mLCx5o7pNOpQNnYpk2CIUkdJMuAcxve8H_ZAYllKY4b7YTvZh0tiHoC8hGfknKnk2IUMYhQoIxgcQ" />
  </picture>
 </a>

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/tigerowo/infinite-canvas/service"
+	"github.com/tigerowo/bytebroad-canvas/service"
 )
 
 func UserCanvasProjects(w http.ResponseWriter, r *http.Request) {

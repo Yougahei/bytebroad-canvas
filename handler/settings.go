@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/tigerowo/infinite-canvas/model"
-	"github.com/tigerowo/infinite-canvas/service"
+	"github.com/tigerowo/bytebroad-canvas/model"
+	"github.com/tigerowo/bytebroad-canvas/service"
 )
 
 type adminChannelActionRequest struct {

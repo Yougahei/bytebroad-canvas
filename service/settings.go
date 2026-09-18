@@ -14,8 +14,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tigerowo/infinite-canvas/model"
-	"github.com/tigerowo/infinite-canvas/repository"
+	"github.com/tigerowo/bytebroad-canvas/model"
+	"github.com/tigerowo/bytebroad-canvas/repository"
 )
 
 var adminModelHTTPClient = &http.Client{Timeout: 30 * time.Second}

@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/tigerowo/infinite-canvas/model"
+	"github.com/tigerowo/bytebroad-canvas/model"
 )
 
 const (

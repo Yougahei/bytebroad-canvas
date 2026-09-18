@@ -22,8 +22,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tigerowo/infinite-canvas/model"
-	"github.com/tigerowo/infinite-canvas/service"
+	"github.com/tigerowo/bytebroad-canvas/model"
+	"github.com/tigerowo/bytebroad-canvas/service"
 )
 
 func CreateCanvasImageTask(w http.ResponseWriter, r *http.Request) {

@@ -22,8 +22,8 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/robfig/cron/v3"
-	"github.com/tigerowo/infinite-canvas/model"
-	"github.com/tigerowo/infinite-canvas/repository"
+	"github.com/tigerowo/bytebroad-canvas/model"
+	"github.com/tigerowo/bytebroad-canvas/repository"
 	"gorm.io/gorm"
 )
 

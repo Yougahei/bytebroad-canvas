@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/tigerowo/infinite-canvas/model"
-	"github.com/tigerowo/infinite-canvas/service"
+	"github.com/tigerowo/bytebroad-canvas/model"
+	"github.com/tigerowo/bytebroad-canvas/service"
 )
 
 func AutoDLWorkflows(w http.ResponseWriter, r *http.Request) {
