@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/tigerowo/bytebroad-canvas/service"
+	"github.com/Yougahei/bytebroad-canvas/service"
 )
 
 func UserVideoGenerationLogs(w http.ResponseWriter, r *http.Request) {

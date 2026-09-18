@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/tigerowo/bytebroad-canvas/model"
+	"github.com/Yougahei/bytebroad-canvas/model"
 )
 
 const ModelChannelProtocolGemini = "gemini"

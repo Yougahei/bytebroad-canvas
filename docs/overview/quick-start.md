@@ -10,7 +10,7 @@ description: 用最少步骤把 bytebroad-canvas 跑起来
 ## Docker 启动
 
 ```bash
-git clone git@github.com:tigerowo/bytebroad-canvas.git
+git clone git@github.com:Yougahei/bytebroad-canvas.git
 cd bytebroad-canvas
 cp .env.example .env
 docker compose up -d

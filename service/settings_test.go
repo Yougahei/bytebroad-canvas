@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tigerowo/bytebroad-canvas/model"
+	"github.com/Yougahei/bytebroad-canvas/model"
 )
 
 func TestFetchAdminChannelModelsParsesOpenAIModels(t *testing.T) {

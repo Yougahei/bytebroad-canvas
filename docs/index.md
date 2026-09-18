@@ -25,10 +25,6 @@
 - [开源协议](business/license.md)
 - [商务合作](business/business.md)
 
-## 赞助支持
-
-- [打赏支持](support/donate.md)
-
 ## 项目进度
 
 - [待测试](progress/pending-test.md)

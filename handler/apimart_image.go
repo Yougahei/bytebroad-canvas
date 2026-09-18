@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tigerowo/bytebroad-canvas/model"
-	"github.com/tigerowo/bytebroad-canvas/service"
+	"github.com/Yougahei/bytebroad-canvas/model"
+	"github.com/Yougahei/bytebroad-canvas/service"
 )
 
 func normalizeAPIMartImageBody(body []byte, contentType string, modelName string, channel model.ModelChannel) ([]byte, string, error) {

@@ -14,9 +14,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tigerowo/bytebroad-canvas/config"
-	"github.com/tigerowo/bytebroad-canvas/model"
-	"github.com/tigerowo/bytebroad-canvas/repository"
+	"github.com/Yougahei/bytebroad-canvas/config"
+	"github.com/Yougahei/bytebroad-canvas/model"
+	"github.com/Yougahei/bytebroad-canvas/repository"
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/google/uuid"
 	"golang.org/x/crypto/bcrypt"

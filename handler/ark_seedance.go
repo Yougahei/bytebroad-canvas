@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/tigerowo/bytebroad-canvas/service"
+	"github.com/Yougahei/bytebroad-canvas/service"
 )
 
 func prepareArkSeedanceRequest(input aiProtocolRequest) (aiProtocolRequest, bool, error) {

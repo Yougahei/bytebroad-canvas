@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/tigerowo/bytebroad-canvas/model"
+	"github.com/Yougahei/bytebroad-canvas/model"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )

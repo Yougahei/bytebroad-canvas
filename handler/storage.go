@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/tigerowo/bytebroad-canvas/model"
-	"github.com/tigerowo/bytebroad-canvas/service"
+	"github.com/Yougahei/bytebroad-canvas/model"
+	"github.com/Yougahei/bytebroad-canvas/service"
 )
 
 // StorageConfig 返回公开存储配置。

@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/tigerowo/bytebroad-canvas/model"
-	"github.com/tigerowo/bytebroad-canvas/service"
+	"github.com/Yougahei/bytebroad-canvas/model"
+	"github.com/Yougahei/bytebroad-canvas/service"
 )
 
 func AgentSkills(w http.ResponseWriter, _ *http.Request) {

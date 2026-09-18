@@ -3,7 +3,7 @@ package repository
 import (
 	"errors"
 
-	"github.com/tigerowo/bytebroad-canvas/model"
+	"github.com/Yougahei/bytebroad-canvas/model"
 	"gorm.io/gorm"
 )
 

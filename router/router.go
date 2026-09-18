@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/tigerowo/bytebroad-canvas/handler"
-	"github.com/tigerowo/bytebroad-canvas/middleware"
+	"github.com/Yougahei/bytebroad-canvas/handler"
+	"github.com/Yougahei/bytebroad-canvas/middleware"
 )
 
 func New() *gin.Engine {

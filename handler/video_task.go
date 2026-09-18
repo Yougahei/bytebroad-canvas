@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tigerowo/bytebroad-canvas/model"
-	"github.com/tigerowo/bytebroad-canvas/service"
+	"github.com/Yougahei/bytebroad-canvas/model"
+	"github.com/Yougahei/bytebroad-canvas/service"
 )
 
 func StartVideoTaskPoller() {

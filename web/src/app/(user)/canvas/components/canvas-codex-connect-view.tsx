@@ -8,8 +8,8 @@ import { canvasThemes } from "@/lib/canvas-theme";
 import { useThemeStore } from "@/stores/use-theme-store";
 import type { useCodexAgent } from "../agent/use-codex-agent";
 
-const pluginCommand = "codex plugin marketplace add https://github.com/tigerowo/bytebroad-canvas.git\ncodex plugin add canvas-agent@bytebroad-canvas";
-const startCommand = "npx -y @tigerowo/canvas-agent@latest";
+const pluginCommand = "codex plugin marketplace add https://github.com/Yougahei/bytebroad-canvas.git\ncodex plugin add canvas-agent@bytebroad-canvas";
+const startCommand = "npx -y @yougahei/canvas-agent@latest";
 
 export function CanvasCodexConnectView({ agent, onChat }: {
     agent: Pick<ReturnType<typeof useCodexAgent>, "connection" | "status" | "error" | "connect" | "disconnect">;

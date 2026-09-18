@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tigerowo/bytebroad-canvas/model"
-	"github.com/tigerowo/bytebroad-canvas/repository"
+	"github.com/Yougahei/bytebroad-canvas/model"
+	"github.com/Yougahei/bytebroad-canvas/repository"
 )
 
 const (

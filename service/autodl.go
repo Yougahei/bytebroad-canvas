@@ -15,7 +15,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tigerowo/bytebroad-canvas/model"
+	"github.com/Yougahei/bytebroad-canvas/model"
 )
 
 const autoDLAPIPath = "/api/v1/comfyui"

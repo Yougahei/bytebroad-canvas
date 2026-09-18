@@ -10,7 +10,7 @@ description: 使用 Docker Compose 部署 bytebroad-canvas
 ## 使用发布镜像
 
 ```bash
-git clone git@github.com:tigerowo/bytebroad-canvas.git
+git clone git@github.com:Yougahei/bytebroad-canvas.git
 cd bytebroad-canvas
 cp .env.example .env
 docker compose up -d
